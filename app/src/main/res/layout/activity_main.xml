@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context="com.example.administrator.demo_defind_attribute_view.MainActivity">
+
+    <com.example.administrator.demo_defind_attribute_view.DF_view
+        android:id="@+id/view_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+
+        custom:left_btn_background="#C1C4B4"
+        custom:left_btn_text="BACK"
+        custom:left_btn_text_color="#1A8EDB"
+        custom:left_btn_text_size="10sp"
+
+        custom:right_btn_background="#6F7C89"
+        custom:right_btn_text="MORE"
+        custom:right_btn_text_color="#E5D3D3"
+        custom:right_btn_text_size="10sp"
+
+        custom:title_text="自定义标题"
+        custom:title_text_color="#E5D3D3"
+        custom:title_text_size="10sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textview_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view_id"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="hello "
+        android:textSize="20sp" />
+
+</RelativeLayout>
